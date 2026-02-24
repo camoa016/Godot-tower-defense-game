@@ -15,17 +15,19 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="TD game"
+run/main_scene="uid://buw0jyfrgr2jw"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Globals="*res://Scripts/Globals.gd"
+Globals="*uid://cxibitdw2f2if"
 
-[global_group]
+[display]
 
-enemies=""
-Walls=""
+window/size/viewport_width=1024
+window/size/viewport_height=576
+window/stretch/mode="viewport"
 
 [input]
 
