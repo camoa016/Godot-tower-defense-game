@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b7uq4iqslnk66"]
+
+[ext_resource type="Script" uid="uid://ba230ggmgb6gq" path="res://Scripts/enemy_path_follow.gd" id="1_vfsvd"]
+
+[node name="PathFollow2D" type="PathFollow2D" unique_id=264479835]
+rotates = false
+loop = false
+script = ExtResource("1_vfsvd")

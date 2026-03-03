@@ -1,15 +1,14 @@
 [gd_scene format=3 uid="uid://nsreys3xna3g"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ndpwd"]
+[ext_resource type="Script" uid="uid://ficf5imqy6in" path="res://Scripts/tower.gd" id="1_mh5eo"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_ndpwd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6jpva"]
+size = Vector2(24, 24)
 
 [node name="Tower" type="Node2D" unique_id=1444111159]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=129036508]
-position = Vector2(4.7683716e-07, -4.7683716e-07)
-scale = Vector2(20, 20)
-texture = SubResource("PlaceholderTexture2D_ndpwd")
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_mh5eo")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1414018608]
 collision_layer = 2
@@ -17,3 +16,7 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=353477696]
 shape = SubResource("RectangleShape2D_6jpva")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=129036508]
+rotation = 1.5707964
+texture = ExtResource("1_ndpwd")

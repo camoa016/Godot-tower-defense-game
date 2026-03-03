@@ -1,13 +1,12 @@
-[gd_scene format=3 uid="uid://b7uq4iqslnk66"]
+[gd_scene format=3 uid="uid://b6e7fx38tpacw"]
 
-[ext_resource type="Script" uid="uid://ba230ggmgb6gq" path="res://Scripts/enemy_path.gd" id="1_1f0kj"]
-[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_hghv2"]
+[ext_resource type="Script" uid="uid://xik6behab4hi" path="res://Scripts/enemy.gd" id="1_hghv2"]
 
-[node name="enemy" type="PathFollow2D" unique_id=264479835]
-rotates = false
-loop = false
-script = ExtResource("1_1f0kj")
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_hghv2"]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=956119632]
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("1_hghv2")
+[node name="enemy" type="Node2D" unique_id=1071158301]
+script = ExtResource("1_hghv2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=977806970]
+scale = Vector2(32, 32)
+texture = SubResource("PlaceholderTexture2D_hghv2")

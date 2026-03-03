@@ -2,9 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://iurw4u6x5ar7" path="res://Assets/tileset.png" id="1_bo1nx"]
 [ext_resource type="Script" uid="uid://04d53drx7yca" path="res://Scripts/path_2d.gd" id="2_8gbba"]
-[ext_resource type="PackedScene" uid="uid://b7uq4iqslnk66" path="res://Scenes/enemy.tscn" id="3_8gbba"]
 [ext_resource type="Script" uid="uid://bdtdn3fygh7j" path="res://Scripts/tower_placer.gd" id="4_jjvhh"]
-[ext_resource type="PackedScene" uid="uid://nsreys3xna3g" path="res://Scenes/tower.tscn" id="5_kry3j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jjgbg"]
 texture = ExtResource("1_bo1nx")
@@ -20,7 +18,7 @@ sources/3 = SubResource("TileSetAtlasSource_jjgbg")
 
 [sub_resource type="Curve2D" id="Curve2D_bo1nx"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -32, 240, 0, 0, 0, 0, 80, 240, 0, 0, 0, 0, 80, 144, 0, 0, 0, 0, 176, 144, 0, 0, 0, 0, 176, 48, 0, 0, 0, 0, 336, 48, 0, 0, 0, 0, 336, 144, 0, 0, 0, 0, 272, 144, 0, 0, 0, 0, 272, 240, 0, 0, 0, 0, 432, 240, 0, 0, 0, 0, 432, 112, 0, 0, 0, 0, 480, 112)
+"points": PackedVector2Array(0, 0, 0, 0, -32, 240, 0, 0, 0, 0, 80, 240, 0, 0, 0, 0, 80, 144, 0, 0, 0, 0, 176, 144, 0, 0, 0, 0, 176, 48, 0, 0, 0, 0, 336, 48, 0, 0, 0, 0, 336, 144, 0, 0, 0, 0, 272, 144, 0, 0, 0, 0, 272, 240, 0, 0, 0, 0, 432, 240, 0, 0, 0, 0, 432, 112, 0, 0, 0, 0, 544, 112)
 }
 point_count = 12
 
@@ -40,11 +38,6 @@ tile_set = SubResource("TileSet_bo1nx")
 curve = SubResource("Curve2D_bo1nx")
 script = ExtResource("2_8gbba")
 
-[node name="enemy" parent="TileMapLayer/Path2D" unique_id=264479835 instance=ExtResource("3_8gbba")]
-position = Vector2(-32, 240)
-
-[node name="TowerPlacer2" type="Node2D" parent="." unique_id=2086652144]
+[node name="TowerPlacer" type="Node2D" parent="." unique_id=2086652144]
 position = Vector2(256, 144)
 script = ExtResource("4_jjvhh")
-
-[node name="Tower" parent="TowerPlacer2" unique_id=1444111159 instance=ExtResource("5_kry3j")]
