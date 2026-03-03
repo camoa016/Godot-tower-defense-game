@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://nsreys3xna3g"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ndpwd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6jpva"]
+
+[node name="Tower" type="Node2D" unique_id=1444111159]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=129036508]
+position = Vector2(4.7683716e-07, -4.7683716e-07)
+scale = Vector2(20, 20)
+texture = SubResource("PlaceholderTexture2D_ndpwd")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1414018608]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=353477696]
+shape = SubResource("RectangleShape2D_6jpva")
